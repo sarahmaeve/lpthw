@@ -1,0 +1,27 @@
+# Python symbol list for review
+# as instructed in exercise 22
+
+# : single line comment
+print() : function to send text to STDOUT by default
+print("text", expression)
++ - / * % : mathematical operators
+> < : comparison operators yielding True or False
+= : variable assignment in this case
+print(f"text {interpolation}") : formatted text
+{} and string.format() also used
+print( --- , end=' ') : end with space (or other char) instead of \n
+print("""
+multiline
+""")
+input() : direct STDIN
+int() : cast to integer
+variable, variable, variable = unpack: unpacking structure used with argv
+from sys import argv : import a single method
+open(file) : open a file (default read-only)
+file.read (whole contents) and file.close
+file.write
+def  : start a function
+f.seek(location) : go to byte location in file
+file.readline() : just one line as specified
++=
+return : (from function)
