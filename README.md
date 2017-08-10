@@ -15,3 +15,4 @@ Exercises and variants on exercises based on Zed A. Shaw's book.
 * [CS50: Selection Sort (code is kinda wrong)](https://www.youtube.com/watch?v=f8hXR_Hvybo)
 * [Transforming Code into Beautiful Idiomatic Python](https://www.youtube.com/watch?v=OSGv2VnC0go)
 * [Best Practices for Beautiful Intelligible Code](https://www.youtube.com/watch?v=wf-BqAjZb8M)
+* [7 Simple Tricks to Write Better Python](https://www.youtube.com/watch?v=VBokjWj_cEA)
