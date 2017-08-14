@@ -29,3 +29,18 @@ message.translate(rot13)
 # the _actual_ answer
 import codecs
 codecs.encode('Hello There!', 'rot13')
+
+####
+# find narcissistic numbers (codewars)
+
+def narcissistic( value ):
+    # split into digits
+    powers = [int(digit) ** len(str(value)) for digit in str(value)]
+    if sum(powers) == value:
+        return True
+
+    return False
+
+## most elegant answer:
+def narcissistic(value):
+    return bool(value==sum([int(a) ** len(str(value)) for a in str(value)]))
