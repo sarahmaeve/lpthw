@@ -23,3 +23,12 @@ myRegex = re.compile(r'(\d\d\d)?-?(\d\d\d)-(\d\d\d\d)')
 test = myRegex.search('blah: 403-0532')
 # unpack groups() tuple
 area_code, prefix, suffix = test.groups()
+
+
+# hackerrank string challenge: swap case of a string
+# built on a lot of similar exercises
+# of course this has apparently been superceded by str.swapcase() -- lol
+
+import string
+def swap_case(s):
+    return s.translate(str.maketrans(string.ascii_letters, string.ascii_uppercase + string.ascii_lowercase ))

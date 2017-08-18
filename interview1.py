@@ -19,6 +19,9 @@ import random
 # [ ] Include symbols (how many?)
 # """
 
+# can replace with string constants
+# import string
+# string.ascii_uppercase et al
 
 UPPERALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 LOWERALPHA = 'abcdefghijklmnopqrstuvwxyz'
