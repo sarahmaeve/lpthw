@@ -36,3 +36,35 @@ def is_sorted_and_how(arr):
 
 ## in this case kata answer is the same, with an optional sorted(arr)[::-1]
 ## and if / elif / else instead of if/return clauses
+
+# code along with https://www.youtube.com/watch?v=Nkw6Jg_Gi4w
+# swap based sort
+def insertion_sort(A):
+    for i in range(1, len(A)):
+        j = i - 1
+        while A[j] > A[j+1] and j >= 0:
+            A[j], A[j+1] = A[j+1], A[j]
+            j -= 1
+    return A
+
+print(insertion_sort([4, 5, 12, 8, 2]))
+
+
+# from his github as the code-along is wrong
+# removed unnecessary buffer variable from his version
+def insertion_sort3(A):
+    for i in range(1, len(A)):
+        curNum = A[i]
+        # negative ranges and strides are confusing and
+        # error prone (like the original video)
+        for j in range(i-1, -2, -1):
+            # print("{} : {}".format(A[j],curNum))
+            if A[j] > curNum:
+                A[j+1] = A[j]
+            else:
+                break
+        A[j+1] = curNum
+    return A
+
+
+print(insertion_sort3([0, 12, 5, 3, 9, 7, 2, 34, 23, 1]))
