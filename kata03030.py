@@ -25,6 +25,9 @@ def autocomplete(input_, dictionary):
 # but possibly computationally expensive ???
 # use of .lower(), .upper() and .capitalize() in other solutions
 # non-regexp character check using join from list comprehension
+# interesting: https://stackoverflow.com/questions/1276764/stripping-everything-but-alphanumeric-chars-from-a-string-in-python
+# shows regular expressions 3 - 5x faster than the list comp for this type of
+# problem. I should rerun these and timeit
 
 def autocomplete(input_, dictionary):
     input_ = ''.join( [ c for c in list(input_) if c.isalpha() ])
